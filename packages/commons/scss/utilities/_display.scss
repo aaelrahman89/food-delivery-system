@@ -1,0 +1,16 @@
+.hidden {
+  display: none !important;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.vg-surface--dark {
+  background-color: var(--color-surface-dark);
+}
+
+.vg-link-container {
+  color: initial;
+}

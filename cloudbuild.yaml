@@ -1,0 +1,122 @@
+steps:
+  - name: "gcr.io/cloud-builders/gsutil"
+    id: "get-cache"
+    entrypoint: "sh"
+    waitFor: ["-"]
+    args:
+      - -c
+      - |
+        gsutil -m cp gs://survv-node-dependencies/$REPO_NAME-$(sha256sum yarn.lock | cut -c1-10).tar /tmp/ || true \
+        && tar -xf /tmp/$REPO_NAME-$(sha256sum yarn.lock | cut -c1-10).tar --directory ./ || true
+
+  - name: "gcr.io/$PROJECT_ID/misc/nokube"
+    id: "fast-mockify"
+    entrypoint: "sh"
+    waitFor: ["-"]
+    args:
+      - -c
+      - |
+        bash ./fast-mockify.sh
+
+  - name: "gcr.io/$PROJECT_ID/misc/web-builder"
+    id: "yarn-install"
+    waitFor: ['get-cache']
+    entrypoint: "sh"
+    args:
+      - -c
+      - |
+        export YARN_CACHE_FOLDER="$(pwd)/build-cache/yarn"
+        yarn install --frozen-lockfile
+
+  - name: "gcr.io/cloud-builders/gsutil"
+    id: "save-cache"
+    waitFor: ["yarn-install"]
+    entrypoint: "sh"
+    args:
+      - -c
+      - |
+        tar -cf $REPO_NAME-$(sha256sum yarn.lock | cut -c1-10).tar ./build-cache \
+        && gsutil -m cp $REPO_NAME-$(sha256sum yarn.lock | cut -c1-10).tar gs://survv-node-dependencies/$REPO_NAME-$(sha256sum yarn.lock | cut -c1-10).tar
+
+  - name: "gcr.io/$PROJECT_ID/misc/web-builder"
+    id: "yarn-lint"
+    waitFor: ['yarn-install']
+    entrypoint: "sh"
+    args:
+      - -c
+      - |
+        export YARN_CACHE_FOLDER="$(pwd)/build-cache/yarn"
+        yarn run lint
+
+  - name: "gcr.io/$PROJECT_ID/misc/web-builder"
+    id: "yarn-type-check"
+    waitFor: ["yarn-install"]
+    entrypoint: "sh"
+    args:
+      - -c
+      - |
+        export YARN_CACHE_FOLDER="$(pwd)/build-cache/yarn"
+        yarn run type-check
+
+  - name: "gcr.io/$PROJECT_ID/misc/web-builder"
+    id: "yarn-coverage"
+    entrypoint: "sh"
+    args:
+      - -c
+      - |
+        export YARN_CACHE_FOLDER="$(pwd)/build-cache/yarn"
+        export LOCAL_WIREMOCK=true
+        yarn run coverage
+
+  - name: "gcr.io/$PROJECT_ID/misc/web-builder"
+    id: "yarn-bundle"
+    entrypoint: "sh"
+    args:
+      - -c
+      - |
+        if [ $BRANCH_NAME = master ]; then
+          export YARN_CACHE_FOLDER="$(pwd)/build-cache/yarn"
+          yarn run bundle
+        fi;
+
+  # ===== create image from master branch =====
+  - name: "gcr.io/cloud-builders/docker"
+    id: "build-docker-image"
+    entrypoint: "sh"
+    args:
+      - -c
+      - |
+        if [ $BRANCH_NAME = master ]; then
+          docker build --label commit=$COMMIT_SHA \
+          -t gcr.io/$PROJECT_ID/$REPO_NAME:latest \
+          -t gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH_NAME-latest \
+          -t gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH_NAME-$SHORT_SHA\
+          -t gcr.io/$PROJECT_ID/$REPO_NAME:$BRANCH_NAME-$(date --utc +%FT%H_%M_%SZ) \
+          -t gcr.io/$PROJECT_ID/$REPO_NAME:survv-deployment-component \
+          -f Dockerfile .
+        fi;
+
+  - name: "gcr.io/cloud-builders/docker"
+    id: "push-docker-image"
+    entrypoint: "sh"
+    args:
+      - -c
+      - |
+        if [ $BRANCH_NAME = master ]; then
+          docker push gcr.io/$PROJECT_ID/$REPO_NAME
+        fi;
+
+  # ===== trigger deployment on master branch =====
+  - name: "gcr.io/$PROJECT_ID/misc/deploy-trigger"
+    id: "trigger-staging-deployment"
+    entrypoint: "sh"
+    args:
+      - -c
+      - |
+        if [ $BRANCH_NAME = master ]; then
+          deploy-trigger $REPO_NAME-$COMMIT_SHA
+        fi;
+
+timeout: "2700s"
+options:
+  machineType: "N1_HIGHCPU_8"

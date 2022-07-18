@@ -1,0 +1,42 @@
+:root {
+  // Colors
+  --color-primary: #e83744;
+  --color-primary-dim: RGBA(232,55,68,0.11);
+  --color-surface-dark: #f2f2f2;
+  --color-surface-light: #ffffff;
+  --color-transparent: rgba(255, 255, 255, 0);
+  --color-on-surface-low-emphasis: rgba(0, 0, 0, 0.56);
+  --color-on-surface-mid-emphasis: rgba(0, 0, 0, 0.78);
+  --color-on-surface-high-emphasis: #000000;
+  --color-border-light: #d7d7d7;
+  --color-on-primary: #ffffff;
+  --color-disabled: #b6b6b6;
+
+  // Insets
+  --inset-huge: 64px;
+  --inset-xx-large: 32px;
+  --inset-x-large: 30px;
+  --inset-large: 20px;
+  --inset-mid: 16px;
+  --inset-small: 8px;
+  --inset-tiny: 4px;
+
+  // Sizes
+  --size-app-bar: 64px;
+
+  @media (max-width: 600px)
+  {
+    // Insets
+    --inset-large: 12px;
+    --inset-mid: 8px;
+    --inset-small: 4px;
+  }
+
+  // Fonts
+  --font-size-large: 20px;
+  --font-size-mid: 16px;
+  --font-size-small: 14px;
+
+  // Transition Timing
+  --shell-transition: 0.4s;
+}

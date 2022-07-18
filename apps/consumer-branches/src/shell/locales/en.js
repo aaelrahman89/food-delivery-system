@@ -1,0 +1,308 @@
+import enOld from './en-old';
+import { commonEn } from '@survv/commons/locales/commonEn';
+
+export const en = {
+  ...commonEn,
+  ...enOld,
+
+  CONFIRM: 'Confirm',
+  DISCARD: 'Discard',
+  SIGN_IN: 'Sign In',
+  BRANCH_CODE: 'Branch Code',
+  CHANGE_LANGUAGE: 'Change Language',
+
+  APP_BAR_PILOT_REQUEST_BUTTON: 'Request Pilot',
+
+  MENU_HEADER_DELIVERY_ORDERS: 'Delivery Orders',
+  MENU_HEADER_ONLINE_ORDERS: 'Online Orders',
+
+  MENU_ENTRY_HOME: 'Home',
+  MENU_ENTRY_PILOTS: 'Pilots',
+  MENU_ENTRY_ALL_ORDERS: 'All Orders',
+  MENU_ENTRY_DAILY_CLOSING: 'Daily Closing',
+  MENU_ENTRY_DISPUTED_ORDERS: 'Disputed Orders',
+  MENU_ENTRY_ALL_ONLINE_ORDERS: 'All Orders',
+  MENU_ENTRY_CATALOGUES: 'Catalogues',
+
+  NOTIFICATION_CHIP_ONLINE_ORDERS: 'Online Orders',
+  NOTIFICATION_CHIP_SCHEDULED_ORDERS: 'Scheduled Orders',
+  NOTIFICATION_CHIP_PILOTS: 'Pilots',
+
+  ERR_EXPIRED_TOKEN: 'You Session is expired. Please refresh and login again',
+  ERR_INACTIVE_BRANCH: 'Your branch is deactivated',
+  ERR_MAX_TRIP_THRESHOLD_EXCEEDED:
+    'Failed to request {pilotsCount} of {failedRequestsCount} pilots because you reached the maximum number of pending requests. Please try again in a few minutes',
+  ERR_SERVER_TRANSACTION_FAILURE:
+    'The server failed to process your request. Please try again in a few moments',
+  ERR_TRAIL_NOT_READY: 'Trail is not ready',
+  ERR_INSUFFICIENT_BALANCE:
+    'Failed to request {pilotsCount} of {failedRequestsCount} pilots because of insufficient balance. Please recharge your credit',
+  ERR_MAX_TASKS_PER_TRIP_THRESHOLD_EXCEEDED:
+    'You reached the maximum number of orders for the pilot',
+
+  NAV_CATALOGUES_LIST: 'Catalogues',
+  ROUTE_CATALOGUES_LIST: 'Catalogues',
+  ROUTE_PILOTS: 'Pilots',
+
+  SEARCHING_SINCE: 'Searching since',
+  NUMBER_OF_DELIVERIES: 'No. of deliveries',
+  SINCE: 'since',
+  ETA: 'ETA',
+  DURATION: 'Duration',
+  ORDER_RECEIPT: 'Order Receipt',
+  TABLE_ACTIONS: 'More',
+  TASK_DETAILS: 'Order Details',
+  NOT_APPLICABLE: 'Not Applicable',
+  OUT_OF_ZONE: 'Out of zone',
+
+  TASK_DAILY_CLOSING: 'Daily Closing',
+  TASK_DAILY_CLOSING_STATUS_NA: 'NA',
+  TASK_DAILY_CLOSING_STATUS_PENDING: 'Pending',
+  TASK_DAILY_CLOSING_STATUS_CLOSED: 'Closed',
+  TASK_DAILY_CLOSING_STATUS_AUTO_CLOSED: 'Auto Closed',
+  TASK_DAILY_CLOSING_CONFIRMATION_MESSAGE:
+    'Once orders are closed you cannot dispute them. Are you sure you want to close the selected orders?',
+
+  DISPUTE_DETAILS: 'Dispute Details',
+  DISPUTE_STATUS: 'Dispute Status',
+  DISPUTE_CATEGORY: 'Dispute Category',
+  DISPUTED_TIME: 'Disputed Time',
+  DISPUTE_DESCRIPTION: 'Description',
+  DISPUTE_DETAILS_FALLBACK: 'This order has not been disputed',
+  DISPUTE_DATE: 'Dispute Date',
+  DISPUTE: 'Dispute',
+
+  TASK_DISPUTE: 'Order Dispute',
+  TASK_DISPUTE_STATUS__04_NA: 'NA',
+  TASK_DISPUTE_STATUS__01_PENDING_REVIEW: 'Pending Review',
+  TASK_DISPUTE_STATUS__02_APPROVED: 'Approved',
+  TASK_DISPUTE_STATUS__03_REJECTED: 'Rejected',
+
+  TASK_DISPUTE_CATEGORY_LABEL: 'Dispute Reason',
+  TASK_DISPUTE_DESCRIPTION: 'Description',
+  TASK_DISPUTE_CATEGORY_NONE: 'NA',
+  TASK_DISPUTE_CATEGORY_ZONE: 'Delivery Zone',
+  TASK_DISPUTE_CATEGORY_PENALTY_CANCELLATIONS: 'Cancellation Penalty',
+  TASK_DISPUTE_CATEGORY_PILOT_WAITING_TIME: 'Pilot Waiting Time',
+
+  VENDOR_BALANCE_AT_RISK_MSG:
+    'Your balance is at risk! Please recharge your balance to avoid service termination.',
+
+  ORDER_CARD_TITLE: 'Order: {orderId}',
+  ORDER_CARD_ITEMS_COUNT: 'Items Count',
+  ORDER_CARD_TOTAL_VALUE: 'Total',
+  ORDER_CARD_REQUESTED_DATE: 'Requested Since',
+  ORDER_CARD_VIEW_DETAILS: 'View Details',
+  ORDER_CARD_START_PREPARING: 'Start Preparing',
+  ORDER_CARD_SCHEDULED_TO: 'Scheduled To',
+
+  YES: 'Yes',
+  APPLY: 'Apply',
+  CANCEL: 'Cancel',
+  CLOSE_TASKS: 'Close orders',
+
+  WARNING: 'Warning',
+  DETAILS: 'Details',
+
+  CLEAR_FILTERS: 'Clear Filters',
+  APPLY_FILTERS: 'Apply Filters',
+
+  C2C_ORDER_DETAILS_CUSTOMER_DETAILS: 'Customer Details',
+  C2C_ORDER_DETAILS_CUSTOMER_NAME: 'Name',
+  C2C_ORDER_DETAILS_CUSTOMER_PHONE: 'Phone Number',
+  C2C_ORDER_DETAILS_ORDER_BRIEF: 'Order Brief',
+  C2C_ORDER_DETAILS_ORDER_ID: 'Order ID',
+  C2C_ORDER_DETAILS_CREATION_TIME: 'Creation Time',
+  C2C_ORDER_DETAILS_PAYMENT_METHOD: 'Payment Method',
+  C2C_ORDER_DETAILS_ORDER_DETAILS: 'Order Details',
+  C2C_ORDER_DETAILS_PILOT_ORDER: 'Pilot Order',
+  C2C_ORDER_DETAILS_ADD_ITEM: 'Add Item',
+
+  C2C_ORDER_ITEM_FORM_ADD_ITEM: 'Add Item',
+  C2C_ORDER_ITEM_FORM_DISCARD_CHANGES: 'Cancel',
+  C2C_ORDER_ITEM_FORM_SAVE_CHANGES: 'Add Item',
+  C2C_ORDER_ITEM_FORM_NAME: 'Name',
+  C2C_ORDER_ITEM_FORM_BRAND: 'Brand',
+  C2C_ORDER_ITEM_FORM_QUANTITY: 'Quantity',
+
+  C2C_ORDER_FORM_REJECT_ORDER: 'Reject Order',
+  C2C_ORDER_FORM_ACCEPT_ORDER: 'Accept Order',
+
+  CATALOGUE_ORDERING_HOURS: 'Ordering Hours',
+  CATALOGUE_DESCRIPTION: 'Description',
+  CATALOGUE_SECTIONS: 'Catalogue Sections',
+  CATALOGUE_SECTIONS_ITEM_PRICE: 'Price',
+  CATALOGUE_SECTIONS_ITEM_PREPARATION_TIME: 'Preparation Time',
+  CATALOGUE_SECTIONS_ITEM_PREPARATION_TIME_UNIT: 'Min',
+  CATALOGUE_SECTIONS_ITEM_CALORIES: 'Calories',
+  CATALOGUE_SECTIONS_ITEM_POPULAR: 'Popular',
+
+  CATALOGUE_STATUS_DRAFT: 'Draft',
+  CATALOGUE_STATUS_READY: 'Ready',
+  CATALOGUE_STATUS_PUBLISHED: 'Published',
+
+  CATALOGUE_SECTIONS_SET_ITEM_AVAILABLE: 'Set item available',
+  CATALOGUE_SECTIONS_SET_ITEM_UNAVAILABLE: 'Set item un-available',
+
+  SURVV_SHOP_ORDER_DETAILS_EDIT_ORDER_ITEMS: 'Edit Order Items',
+  SURVV_SHOP_ORDER_DETAILS_CANCEL: 'Discard',
+  SURVV_SHOP_ORDER_DETAILS_SAVE: 'Save',
+  SURVV_SHOP_ORDER_DETAILS_CUSTOMER_DETAILS: 'Customer Details',
+  SURVV_SHOP_ORDER_DETAILS_CUSTOMER_NAME: 'Name',
+  SURVV_SHOP_ORDER_DETAILS_CUSTOMER_PHONE_NUMBER: 'Phone Number',
+  SURVV_SHOP_ORDER_DETAILS_ORDER_BRIEF: 'Order Brief',
+  SURVV_SHOP_ORDER_DETAILS_ORDER_ID: 'Order ID',
+  SURVV_SHOP_ORDER_DETAILS_CREATION_TIME: 'Creation Time',
+  SURVV_SHOP_ORDER_DETAILS_PAYMENT_METHOD: 'Payment Method',
+  SURVV_SHOP_ORDER_DETAILS_ORDER_STATUS: 'Order Status',
+  SURVV_SHOP_ORDER_DETAILS_ORDER_TYPE: 'Order Type',
+  SURVV_SHOP_ORDER_DETAILS_VENDOR_DETAILS: 'Vendor Details',
+  SURVV_SHOP_ORDER_DETAILS_VENDOR_NAME: 'Name',
+  SURVV_SHOP_ORDER_DETAILS_VENDOR_ID: 'Vendor ID',
+  SURVV_SHOP_ORDER_DETAILS_CHARGING: 'Charging',
+  SURVV_SHOP_ORDER_DETAILS_SUBTOTAL: 'Subtotal',
+  SURVV_SHOP_ORDER_DETAILS_TAX: 'Tax',
+  SURVV_SHOP_ORDER_DETAILS_DELIVERY_FEE: 'Delivery Fee',
+  SURVV_SHOP_ORDER_DETAILS_TOTAL: 'Total',
+  SURVV_SHOP_ORDER_DETAILS_ORDER_ITEMS: 'Order Items',
+  SURVV_SHOP_ORDER_DETAILS_ADD_ITEM: 'Add Item',
+  SURVV_SHOP_ORDER_DETAILS_ITEMS_SELECTION_HEADER: 'Add Item',
+  SURVV_SHOP_ORDER_DETAILS_ITEMS_SELECTION_SAVE: 'Add {quantity} Item(s)',
+
+  ORDER_DETAILS_ITEM_FORM_EDIT_ITEM: 'Edit Item',
+  ORDER_DETAILS_ITEM_FORM_DISPLAY_NAME: 'Name',
+  ORDER_DETAILS_ITEM_FORM_QUANTITY: 'Quantity',
+  ORDER_DETAILS_ITEM_FORM_DISCARD_CHANGES: 'Discard',
+  ORDER_DETAILS_ITEM_FORM_SAVE_CHANGES: 'Save',
+
+  ORDER_STATUS_REQUESTED: 'Requested',
+  ORDER_STATUS_CONFIRMED: 'Confirmed',
+  ORDER_STATUS_SCHEDULED: 'Scheduled',
+  ORDER_STATUS_REJECTED: 'Rejected',
+  ORDER_STATUS_PILOT_REQUESTED: 'Pilot Requested',
+  ORDER_STATUS_PILOT_ASSIGNED: 'Pilot Assigned',
+  ORDER_STATUS_COLLECTED: 'Collected',
+  ORDER_STATUS_DELIVERED: 'Delivered',
+  ORDER_STATUS_CANCELLED: 'Cancelled',
+  ORDER_STATUS_PICKUP: 'Collected',
+
+  ORDER_JOURNEY_TIME_STAMP: 'Time Stamp',
+  ORDER_JOURNEY_DURATION: 'Duration',
+  ORDER_JOURNEY_TERMINATION_REASON: 'Reason',
+  ORDER_JOURNEY_TERMINATION_REASON_TYPE: 'Reason Type',
+  ORDER_JOURNEY_REFUNDED: 'Refunded',
+  ORDER_JOURNEY_TASK_ID: 'Task ID',
+  ORDER_JOURNEY_TRIP_ID: 'Trip ID',
+  ORDER_JOURNEY_PILOT_ID: 'Pilot ID',
+  ORDER_JOURNEY_ACCEPTED_BY: 'Accepted By',
+  ORDER_JOURNEY_REJECTED_BY: 'Rejected By',
+  ORDER_JOURNEY_REJECTION_REASON: 'Rejection reason',
+  ORDER_JOURNEY_REJECTION_NOTES: 'Notes',
+  ORDER_JOURNEY_REJECTION_BUSY_FOR: 'Busy for',
+
+  ORDER_JOURNEY_CANCELLED_BY: 'Cancelled By',
+  ORDER_JOURNEY_CANCELLATION_REASON: 'Cancellation Reason',
+  ORDER_JOURNEY_CANCELLATION_REASON_CATEGORY: 'Reason Category',
+  ORDER_JOURNEY_COLLECTING: 'Started collecting',
+  ORDER_JOURNEY_COLLECTED: 'Collected',
+
+  BRANCH_ORDER_STATUS_REQUESTED: 'Requested',
+  BRANCH_ORDER_STATUS_CONFIRMED: 'Confirmed',
+  BRANCH_ORDER_STATUS_SCHEDULED: 'Scheduled',
+  BRANCH_ORDER_STATUS_REJECTED: 'Rejected',
+  BRANCH_ORDER_STATUS_PILOT_REQUESTED: 'Pilot Requested',
+  BRANCH_ORDER_STATUS_COLLECTED: 'Collected',
+  BRANCH_ORDER_STATUS_DELIVERED: 'Delivered',
+  BRANCH_ORDER_STATUS_CANCELLED: 'Cancelled',
+
+  ORDER_TYPE_C2C: 'C2C',
+  ORDER_TYPE_B2C: 'B2C',
+
+  BRANCH_ORDER_REJECTION_REASONS_HEADER: 'Choose rejection reason',
+  BRANCH_ORDER_REJECTION_REASONS_SEARCH: 'Search reasons',
+
+  BRANCH_BUSY_LIST_HEADER: 'Branch is',
+
+  ITEMS_UNAVAILABLE_LIST_HEADER: 'Choose Unavailable Items',
+  ITEMS_UNAVAILABLE_NOTES: 'Notes',
+
+  REJECTION_REASON_ORDER_TYPE_B2C: 'B2C',
+  REJECTION_REASON_ORDER_TYPE_ERRANDS: 'ERRANDS',
+
+  ORDER_PAYMENT_METHOD_Cash: 'Cash',
+  ORDER_PAYMENT_METHOD_Credit: 'Credit',
+  ORDER_PAYMENT_METHOD_Already_Paid: 'Already Paid',
+
+  MISC_REQUIRED: 'Required',
+  MISC_SHOW_DETAILS: 'Show Details',
+
+  ITEM_CUSTOMIZATION_HEADER_NEW_ITEM: 'Add Item',
+  ITEM_CUSTOMIZATION_BUTTON_NEW_ITEM: 'Add item',
+  ITEM_CUSTOMIZATION_HEADER_EXISTING_ITEM: 'Update Item',
+  ITEM_CUSTOMIZATION_BUTTON_EXISTING_ITEM: 'Save changes',
+  ITEM_CUSTOMIZATION_LABEL_QUANTITY: 'Quantity',
+  ITEM_CUSTOMIZATION_SELECTION_HEADER_MULTI:
+    'Pick at least {min} and maximum of {max}',
+  ITEM_CUSTOMIZATION_SELECTION_HEADER_SINGLE: 'Pick 1',
+
+  AVAILABLE_CATALOGUE_ITEMS_BOTTOM_SHEET_HEADER: 'Add Item',
+  AVAILABLE_CATALOGUE_ITEMS_BOTTOM_SHEET_SEARCH_LABEL: 'Search items',
+
+  APP_UPDATE_ALERT_MESSAGE_PART_1:
+    'A new update of SURVV app is here. Updates continuously deliver new features, fixes and performance improvements.',
+  APP_UPDATE_ALERT_MESSAGE_PART_2:
+    'The page will refresh and launch the updated app',
+  APP_UPDATE_ALERT_APPLY_BUTTON_LABEL: 'Install Updates',
+
+  NOTIFICATION_PERMISSION_ALERT_MESSAGE_PART_1:
+    "Enable notifications and raise the volume of your speaker so you don't miss any orders. Click '",
+  NOTIFICATION_PERMISSION_ALERT_MESSAGE_PART_2: 'Allow',
+  NOTIFICATION_PERMISSION_ALERT_MESSAGE_PART_3: "' when the popup shows.",
+
+  NOTIFICATION_PERMISSION_ALERT_APPLY_BUTTON_LABEL: 'Enable Notifications',
+
+  CATALOGUE_TABLE_HEADER_ENGLISH: 'English Name',
+  CATALOGUE_TABLE_HEADER_ARABIC: 'Arabic Name',
+
+  PILOTS: 'Pilots',
+  PILOTS_PANEL: 'Pilots',
+  PILOT_STATUS_LOADED: 'Delivering',
+  PILOT_STATUS_ASSIGNED: 'Assigned',
+  PILOT_STATUS_WAITING: 'Waiting',
+  PILOT_STATUS_COLLECTING: 'Collecting',
+
+  ACTIVE_REQUESTS_ADD_ORDER: 'Add Order',
+  ACTIVE_REQUESTS_CANCEL: 'Cancel',
+
+  BRANCH_B2C_STATUS_AVAILABLE: 'Available',
+  BRANCH_B2C_STATUS_BUSY_ONE_HOUR: 'Busy (1 hour)',
+  BRANCH_B2C_STATUS_BUSY_TWO_HOUR: 'Busy (2 hours)',
+  BRANCH_B2C_STATUS_BUSY_THREE_HOUR: 'Busy (3 hours)',
+  BRANCH_B2C_STATUS_OUT_OF_SERVICE: 'Out of Service',
+  BRANCH_B2C_STATUS_OUT_OF_WORKING_HOURS: 'Out of Working Hours',
+
+  ONLINE_ORDER_DETAILS_ORDER_BRIEF: 'Order Brief',
+  ONLINE_ORDER_DETAILS_ORDER_ID: 'Order ID',
+  ONLINE_ORDER_DETAILS_NUMBER_OF_ITEMS: 'Number of items',
+  ONLINE_ORDER_DETAILS_REQUESTED_DATE: 'Requested at',
+  ONLINE_ORDER_DETAILS_LAST_UPDATE_DATE: 'Updated at',
+  ONLINE_ORDER_DETAILS_PICKUP_ETA: 'Pickup ETA',
+  ONLINE_ORDER_DETAILS_SCHEDULED_TO: 'Scheduled To',
+  ONLINE_ORDER_DETAILS_DELIVER_BY: 'Deliver By',
+  ONLINE_ORDER_DETAILS_VON: 'VON',
+  ONLINE_ORDER_DETAILS_CHARGING: 'Charging',
+  ONLINE_ORDER_DETAILS_SUBTOTAL: 'Subtotal',
+  ONLINE_ORDER_DETAILS_TAX: 'Tax',
+  ONLINE_ORDER_DETAILS_TOTAL: 'Total',
+  ONLINE_ORDER_DETAILS_ORDER_ITEMS: 'Order Items',
+  ONLINE_ORDER_DETAILS_REJECT: 'Reject',
+  ONLINE_ORDER_DETAILS_ACCEPT: 'Accept',
+  ONLINE_ORDER_DETAILS_ACCEPT_FOR_LATER: 'Accept For Later',
+  ONLINE_ORDER_UNAVAILABLE_ITEMS_NOTIFICATION:
+    'Unavailable items and selections are highlighted in red',
+
+  BUSINESS_BRANCH_NAVIGATION: 'Request Pilot via Planman',
+
+  DELIVERY_FLEET_SURVV_FLEET: 'SURVV Fleet',
+  DELIVERY_FLEET_VENDOR_FLEET: 'Vendor Fleet',
+};

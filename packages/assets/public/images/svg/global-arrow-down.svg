@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/global/arrow-down</title>
+    <defs>
+        <path d="M12.284132,6.44024055 C12.6832651,6.04862543 13.3116301,6.04862543 13.7107633,6.44024055 C14.0964122,6.83185567 14.0964122,7.44838488 13.7107633,7.84 L7.73275544,13.7062887 C7.54757204,13.887984 7.29047275,14 7.00550606,14 C6.72053937,14 6.46344008,13.887984 6.27735773,13.7062887 L0.299349868,7.84 C-0.0997832892,7.44838488 -0.0997832892,6.83185567 0.299349868,6.44024055 C0.698483024,6.04862543 1.32684806,6.04862543 1.72598122,6.44024055 L5.99239104,10.6404009 L5.99239104,0.979919817 C5.99149209,0.43395189 6.44815796,0 7.00460711,0 C7.56105626,0 8.00333895,0.43395189 8.00333895,0.979919817 L8.00333895,10.6395189 L12.284132,6.44024055 Z" id="path-1"></path>
+    </defs>
+    <g id="icons/global/arrow-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+        <g id="icon" transform="translate(5.000000, 5.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Path" fill="#212121" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="Group" mask="url(#mask-2)" fill-opacity="0.87">
+                <g transform="translate(-5.000000, -5.000000)" id="✱-/-Color-/-Icons-/-Black-/-Inactive">
+                    <rect id="Rectangle-13" fill="#000000" x="0" y="0" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

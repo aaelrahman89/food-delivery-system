@@ -1,0 +1,20 @@
+@mixin generate-insets($prop-name) {
+  &--xx-large {
+    #{$prop-name}: var(--inset-xx-large);
+  }
+  &--x-large {
+    #{$prop-name}: var(--inset-x-large);
+  }
+  &--large {
+    #{$prop-name}: var(--inset-large);
+  }
+  &--mid {
+    #{$prop-name}: var(--inset-mid);
+  }
+  &--small {
+    #{$prop-name}: var(--inset-small);
+  }
+  &--tiny {
+    #{$prop-name}: var(--inset-tiny);
+  }
+}

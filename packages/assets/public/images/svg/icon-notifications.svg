@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>525025AF-D9DD-4185-B555-374CB6F68C7C</title>
+    <defs>
+        <path d="M45.58,42.08 L44.15,40.65 C41.75,42.48 40.17,45.3 40.03,48.5 L42.03,48.5 C42.18,45.85 43.54,43.53 45.58,42.08 L45.58,42.08 Z M57.97,48.5 L59.97,48.5 C59.82,45.3 58.24,42.48 55.85,40.65 L54.43,42.08 C56.45,43.53 57.82,45.85 57.97,48.5 L57.97,48.5 Z M56,49 C56,45.93 54.36,43.36 51.5,42.68 L51.5,42 C51.5,41.17 50.83,40.5 50,40.5 C49.17,40.5 48.5,41.17 48.5,42 L48.5,42.68 C45.63,43.36 44,45.92 44,49 L44,54 L42,56 L42,57 L58,57 L58,56 L56,54 L56,49 L56,49 Z M50,60 C50.14,60 50.27,59.99 50.4,59.96 C51.05,59.82 51.58,59.38 51.84,58.78 C51.94,58.54 51.99,58.28 51.99,58 L47.99,58 C48,59.1 48.89,60 50,60 L50,60 Z" id="path-1"></path>
+    </defs>
+    <g id="landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-notifications" transform="translate(-316.000000, -192.000000)">
+            <g id="body" transform="translate(256.000000, 64.000000)">
+                <g id="alert" transform="translate(20.000000, 88.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="ic-notifications" fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

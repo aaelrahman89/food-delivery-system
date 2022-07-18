@@ -1,0 +1,20 @@
+@import "../tools/_insets.scss";
+
+.vg-margin {
+  @include generate-insets('margin')
+}
+.vg-margin-block-start {
+  @include generate-insets('margin-block-start')
+}
+
+.vg-margin-block-end {
+  @include generate-insets('margin-block-end')
+}
+
+.vg-margin-inline-start {
+  @include generate-insets('margin-inline-start')
+}
+
+.vg-margin-inline-end {
+  @include generate-insets('margin-inline-end')
+}

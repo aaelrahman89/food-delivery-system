@@ -1,0 +1,49 @@
+.vg-text--ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.vg-text--mid {
+  font-size: var(--font-size-mid);
+}
+.vg-text--small {
+  font-size: var(--font-size-small);
+}
+.vg-text-emphasis--mid {
+  color: rgba(0, 0, 0, 0.78);
+}
+.vg-text-emphasis--low {
+  color: rgba(0, 0, 0, 0.56);
+}
+.vg-text--bold {
+  font-weight: bold;
+}
+.vg-text-pre {
+  white-space: pre-line;
+}
+.vg-text-align--right {
+  text-align: right;
+}
+.vg-text-align--left {
+  text-align: left;
+}
+.vg-text-align--start {
+  text-align: start;
+}
+.vg-text-align--end {
+  text-align: end;
+}
+.vg-text-align--center {
+  text-align: center;
+}
+.vg-text-nowrap {
+  white-space: nowrap;
+}
+.vg-darkgrey--text {
+  color: #424242 !important;
+  caret-color: #424242 !important;
+}
+.vg-red--text {
+  color: #ef3744 !important;
+  caret-color: #ef3744 !important;
+}

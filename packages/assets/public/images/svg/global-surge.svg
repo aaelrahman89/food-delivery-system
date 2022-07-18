@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/global/surge</title>
+    <defs>
+        <path d="M9.62637769,8.25000219 L6.665573,8.25000219 L10.045323,0.64165453 C10.1465574,0.409666248 10.0405964,0.139521717 9.80860816,0.0382443734 C9.75111597,0.0131506234 9.68911206,0 9.62642066,0 L0.459725345,0 C0.206596439,-0.0007712516 0.000776126163,0.203802967 0,0.456931873 C0,0.469349842 0.000432376163,0.481724842 0.00137768866,0.494099842 L0.918030032,12.4107522 C0.936721439,12.6498303 1.13656909,12.8340803 1.37637769,12.8333498 L2.79537769,12.8333498 L3.670823,21.5875022 C3.69617456,21.839342 3.92090113,22.0229905 4.17278394,21.9975959 C4.33864331,21.9808811 4.48237378,21.8754358 4.548073,21.7222522 L10.048073,8.88890453 C10.1478035,8.65622875 10.0400378,8.38681469 9.80740503,8.28708422 C9.75017066,8.26254906 9.68859644,8.24995922 9.62637769,8.25000219 Z" id="path-1"></path>
+    </defs>
+    <g id="icons/global/surge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+        <g id="icon" transform="translate(7.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Path" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="Group" mask="url(#mask-2)" fill-opacity="0.87">
+                <g transform="translate(-7.000000, -1.000000)" id="✱-/-Color-/-Icons-/-Black-/-Inactive">
+                    <rect id="Rectangle-13" fill="#000000" x="0" y="0" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

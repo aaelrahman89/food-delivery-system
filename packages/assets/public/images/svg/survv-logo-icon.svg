@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <linearGradient x1="100.007069%" y1="50.0020768%" x2="0.00226232388%" y2="50.0020768%" id="linearGradient-1">
+            <stop stop-color="#F1F2F2" offset="0%"></stop>
+            <stop stop-color="#EFF0F0" stop-opacity="0.5871" offset="41.29%"></stop>
+            <stop stop-color="#E8E9E9" stop-opacity="0.4384" offset="56.16%"></stop>
+            <stop stop-color="#DDDEDE" stop-opacity="0.3324" offset="66.76%"></stop>
+            <stop stop-color="#CCCDCD" stop-opacity="0.2466" offset="75.34%"></stop>
+            <stop stop-color="#B6B7B7" stop-opacity="0.1732" offset="82.68%"></stop>
+            <stop stop-color="#9A9B9D" stop-opacity="0.1082" offset="89.18%"></stop>
+            <stop stop-color="#7B7C7E" stop-opacity="0.0508" offset="94.92%"></stop>
+            <stop stop-color="#58595B" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.00289840438%" y1="50.0032731%" x2="100.001908%" y2="50.0032731%" id="linearGradient-2">
+            <stop stop-color="#F1F2F2" offset="0%"></stop>
+            <stop stop-color="#EFF0F0" stop-opacity="0.5871" offset="41.29%"></stop>
+            <stop stop-color="#E8E9E9" stop-opacity="0.4384" offset="56.16%"></stop>
+            <stop stop-color="#DDDEDE" stop-opacity="0.3324" offset="66.76%"></stop>
+            <stop stop-color="#CCCDCD" stop-opacity="0.2466" offset="75.34%"></stop>
+            <stop stop-color="#B6B7B7" stop-opacity="0.1732" offset="82.68%"></stop>
+            <stop stop-color="#9A9B9D" stop-opacity="0.1082" offset="89.18%"></stop>
+            <stop stop-color="#7B7C7E" stop-opacity="0.0508" offset="94.92%"></stop>
+            <stop stop-color="#58595B" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="login" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="set-password" transform="translate(-670.000000, -258.000000)">
+            <g id="body" transform="translate(470.000000, 208.000000)">
+                <g id="Group" transform="translate(200.000000, 50.000000)">
+                    <g transform="translate(0.000000, -0.000000)" id="Group">
+                        <circle id="#CE1515" fill="#CE1515" cx="50" cy="50" r="50"></circle>
+                        <g id="XMLID_8_" transform="translate(26.666667, 16.666667)" fill-rule="nonzero">
+                            <path d="M1.23910275,56.8817204 C-1.59467137,59.7634409 2.45665589,62.7204301 2.76553368,62.9390681 C12.2042642,68.8172043 24.7928299,67.5985663 32.9098508,59.344086 C42.2947073,49.7992832 42.1510432,34.4695341 32.5866066,25.1039427 C32.5686486,25.0860215 32.5506906,25.0716846 32.5363242,25.0573477 L1.23910275,56.8817204 L1.23910275,56.8817204 Z" id="XMLID_21_" fill="#FFFFFF"></path>
+                            <path d="M1.23191955,56.874552 C-1.60185457,59.7562724 2.44947269,62.7132616 2.75835048,62.9318996 C12.197081,68.8100358 24.7856467,67.5913978 32.9026676,59.3369176 C42.2875241,49.7921147 42.14386,34.4623656 32.5794234,25.0967742 C32.5614654,25.078853 32.5435074,25.0645161 32.529141,25.0501792 L1.23191955,56.874552 L1.23191955,56.874552 Z" id="XMLID_20_" fill="url(#linearGradient-1)"></path>
+                            <polygon id="XMLID_19_" fill="#A4A6BA" points="3.77836549 54.3046595 33.7323277 26.3261649 32.3064616 24.7634409"></polygon>
+                            <g id="XMLID_9_" transform="translate(3.950762, 0.000000)">
+                                <path d="M38.9186012,9.80645161 C41.7523754,6.92473118 37.7010481,3.96774194 37.3921703,3.74910394 C27.9534398,-2.12903226 15.3648741,-0.910394265 7.2478532,7.34408602 C-2.1370033,16.8888889 -1.99333921,32.218638 7.5710974,41.5842294 C7.58905541,41.6021505 7.60701342,41.6164875 7.62137983,41.6308244 L38.9186012,9.80645161 L38.9186012,9.80645161 Z" id="XMLID_18_" fill="#FFFFFF"></path>
+                                <path d="M38.9186012,9.80645161 C41.7523754,6.92473118 37.7010481,3.96774194 37.3921703,3.74910394 C27.9534398,-2.12903226 15.3648741,-0.910394265 7.2478532,7.34408602 C-2.1370033,16.8888889 -1.99333921,32.218638 7.5710974,41.5842294 C7.58905541,41.6021505 7.60701342,41.6164875 7.62137983,41.6308244 L38.9186012,9.80645161 L38.9186012,9.80645161 Z" id="XMLID_17_" fill="url(#linearGradient-2)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

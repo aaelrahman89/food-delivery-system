@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="100%" viewBox="0 0 24 24"viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/navigation/e-shop</title>
+    <defs>
+        <path d="M2.11111111,0 L2.11111111,2.25 L17.8888889,2.25 L17.8888889,0 L2.11111111,0 Z M3,11 L17,11 L17,18 C17,19.1045695 16.1045695,20 15,20 L5,20 C3.8954305,20 3,19.1045695 3,18 L3,11 L3,11 Z M5,11 L15,11 L15,15 L5,15 L5,11 Z M10,18.5 C10.5522847,18.5 11,18.0522847 11,17.5 C11,16.9477153 10.5522847,16.5 10,16.5 C9.44771525,16.5 9,16.9477153 9,17.5 C9,18.0522847 9.44771525,18.5 10,18.5 Z M20,8 L17.8888889,3.375 L2.11111111,3.375 L0,8 L0,10 L20,10 L20,8 Z" id="path-1"></path>
+    </defs>
+    <g id="icons/navigation/e-shop" stroke="none" stroke-width="1" fill-rule="evenodd">
+        
+        <g id="icon" transform="translate(2.000000, 2.000000)">
+
+                <use xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

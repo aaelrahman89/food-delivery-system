@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic-arrow</title>
+    <defs>
+        <polygon id="path-1" points="16 4 10 0 10 3 -9.09494702e-13 3 -9.09494702e-13 5 10 5 10 8"></polygon>
+    </defs>
+    <g id="icon" transform="translate(4.000000, 4.000000)">
+    <mask id="mask-2" fill="white">
+      <use xlink:href="#path-1"></use>
+    </mask>
+    <g id="Mask"></g>
+    <g id="Group" mask="url(#mask-2)">
+      <g transform="translate(-4.000000, -4.000000)" id="✱-/-Color-/-Icons-/-Black-/-Inactive">
+        <rect id="Rectangle-13" x="0" y="0" width="24" height="16"></rect>
+      </g>
+    </g>
+  </g>
+</svg>

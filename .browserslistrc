@@ -1,0 +1,8 @@
+last 2 major versions
+>= 2%
+Chrome >= 62
+Firefox >= 58
+Edge >= 12
+iOS >= 10
+Safari >= 10
+Android >= 5.0

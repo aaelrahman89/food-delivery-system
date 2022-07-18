@@ -1,0 +1,20 @@
+@import "../tools/_insets.scss";
+
+.vg-padding {
+  @include generate-insets('padding')
+}
+.vg-padding-block-start {
+  @include generate-insets('padding-block-start')
+}
+
+.vg-padding-block-end {
+  @include generate-insets('padding-block-end')
+}
+
+.vg-padding-inline-start {
+  @include generate-insets('padding-inline-start')
+}
+
+.vg-padding-inline-end {
+    @include generate-insets('padding-inline-end')
+}

@@ -1,0 +1,21 @@
+{
+  "name": "SURVV Branch",
+  "short_name": "SURVV",
+  "scope": "/vendor/",
+  "icons": [
+    {
+      "src": "/consumer-assets/images/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/consumer-assets/images/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./",
+  "theme_color": "#e83744",
+  "background_color": "#e83744",
+  "display": "standalone"
+}

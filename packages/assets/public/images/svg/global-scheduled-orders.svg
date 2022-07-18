@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons-scheduled</title>
+    <defs>
+        <path d="M13,11 L10,11 C9.45,11 9,11.45 9,12 L9,15 C9,15.55 9.45,16 10,16 L13,16 C13.55,16 14,15.55 14,15 L14,12 C14,11.45 13.55,11 13,11 Z M13,1 L13,2 L5,2 L5,1 C5,0.45 4.55,0 4,0 L4,0 C3.45,0 3,0.45 3,1 L3,2 L2,2 C0.89,2 0.01,2.9 0.01,4 L0,18 C0,19.1 0.89,20 2,20 L16,20 C17.1,20 18,19.1 18,18 L18,4 C18,2.9 17.1,2 16,2 L15,2 L15,1 C15,0.45 14.55,0 14,0 L14,0 C13.45,0 13,0.45 13,1 Z M15,18 L3,18 C2.45,18 2,17.55 2,17 L2,7 L16,7 L16,17 C16,17.55 15.55,18 15,18 Z" id="path-1"></path>
+    </defs>
+    <g id="icons-scheduled" stroke="none" stroke-width="1">
+        <g id="Icon-/-Event-/-Rounded" transform="translate(3.000000, 2.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

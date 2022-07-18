@@ -1,0 +1,180 @@
+<template>
+  <vg-overlay
+    :open="open"
+    type="bottom-sheet"
+    :max-width="maxWidth"
+    @backdrop="backdrop"
+  >
+    <v-form @submit.prevent="submit()">
+      <div class="order-rejection-reasons-form">
+        <div class="order-rejection-reasons-form__header">
+          <h1>{{ $t('BRANCH_ORDER_REJECTION_REASONS_HEADER') }}</h1>
+        </div>
+
+        <vg-text-field
+          v-model="searchToken"
+          type="text"
+          outlined
+          max-width="100%"
+          :label="$t('BRANCH_ORDER_REJECTION_REASONS_SEARCH')"
+          @input="search"
+        ></vg-text-field>
+        <v-radio-group
+          v-model="form.reasonId"
+          class="radio-group-full-width"
+          @change="input"
+        >
+          <vg-grid gap-size="small">
+            <vg-panel
+              v-for="(reason, index) in rejectionReasons"
+              :key="`${index}${reason.label}`"
+            >
+              <v-radio
+                color="error"
+                :label="reason.label"
+                :value="reason.id"
+                @change="reasonChanged(reason.label)"
+              ></v-radio>
+            </vg-panel>
+          </vg-grid>
+        </v-radio-group>
+      </div>
+    </v-form>
+    <template v-slot:footer>
+      <div class="order-rejection-reasons-form__footer">
+        <vg-flex gap-size=" small" justify-content="space-between">
+          <div class="order-rejection-reasons-form__footer__button">
+            <vg-button outlined expand dark @click="discard">
+              {{ $t('DISCARD') }}
+            </vg-button>
+          </div>
+          <div class="order-rejection-reasons-form__footer__button">
+            <vg-button expand :disabled="!submittable" @click="submit">
+              {{ $t('CONFIRM') }}
+            </vg-button>
+          </div>
+        </vg-flex>
+      </div>
+    </template>
+  </vg-overlay>
+</template>
+
+<script lang="ts">
+import Vue from 'vue';
+import { VgButton } from '@survv/commons/components/VgButton';
+import { VgFlex } from '@survv/commons/components/VgFlex';
+import { VgGrid } from '@survv/commons/components/VgGrid';
+import { VgOverlay } from '@survv/commons/components/VgOverlay';
+import { VgPanel } from '@survv/commons/components/VgPanel';
+import { VgTextField } from '@survv/commons/components/VgTextField';
+
+const events = {
+  submitted: 'submitted',
+  discard: 'discard',
+  backdrop: 'backdrop',
+  search: 'search',
+  input: 'input',
+  updateReasonLabel: 'update:reason-label',
+};
+export default Vue.extend({
+  name: 'RejectionReasonsForm',
+  components: {
+    VgPanel,
+    VgOverlay,
+    VgTextField,
+    VgGrid,
+    VgFlex,
+    VgButton,
+  },
+  props: {
+    open: {
+      type: Boolean,
+      default: false,
+    },
+    maxWidth: {
+      type: String,
+      default: undefined,
+    },
+    form: {
+      type: Object,
+      required: true,
+    },
+    rejectionReasons: {
+      type: Array,
+      required: true,
+    },
+    submittable: {
+      type: Boolean,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      searchToken: '',
+    };
+  },
+  methods: {
+    backdrop(): void {
+      this.$emit(events.backdrop);
+    },
+    discard(): void {
+      this.$emit(events.discard);
+    },
+    submit(): void {
+      this.$emit(events.submitted);
+    },
+    search(): void {
+      this.$emit(events.search, this.searchToken);
+    },
+    input(): void {
+      this.$emit(events.input);
+    },
+    reasonChanged(label: string): void {
+      this.$emit(events.updateReasonLabel, label);
+    },
+  },
+});
+</script>
+
+<style>
+.v-input--selection-controls .v-input__control {
+  width: 100% !important;
+}
+.radio-group-full-width {
+  padding-top: 0;
+  margin-top: 0;
+}
+</style>
+
+<style scoped lang="scss">
+.order-rejection-reasons-form {
+  background-color: var(--color-surface-light);
+  padding: var(--inset-mid);
+
+  &__header {
+    margin-bottom: var(--inset-mid);
+  }
+
+  &__footer {
+    max-width: inherit;
+    width: 600px;
+    background-color: var(--color-surface-dark);
+    height: 100px;
+    max-height: 10vh;
+    padding: 30px;
+    border: 1px solid var(--color-border-light);
+
+    &__button {
+      width: calc(50% - var(--inset-small));
+    }
+  }
+
+  &__button {
+    background-color: #ffffff !important;
+    &__slot {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}
+</style>

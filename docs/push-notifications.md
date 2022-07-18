@@ -1,0 +1,8 @@
+Recommended reads before working on the service worker (in order)
+- [Service worker registration](https://developers.google.com/web/fundamentals/primers/service-workers/registration)
+- [Service worker lifecycle](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)
+- [service worker update (you can ignore the caching stuff)](https://samvloeberghs.be/posts/lessons-learned-on-offline-capabilities-with-service-workers-using-workbox)
+- [service worker update with workbox](https://samvloeberghs.be/posts/lessons-learned-on-offline-capabilities-with-service-workers-using-workbox-the-sequel)
+- [introduction to workbox](https://developers.google.com/web/tools/workbox/modules/workbox-window)
+- [prompting the user to update the app](https://developers.google.com/web/tools/workbox/guides/advanced-recipes)
+- [push notifications (check the links in order & ignore the quota for now)](https://serviceworke.rs/web-push.html)

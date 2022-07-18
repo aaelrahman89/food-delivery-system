@@ -1,0 +1,12 @@
+$body-font-family: 'Noto Kufi Arabic', 'Open Sans', 'Arial', sans-serif;
+
+@import '~vuetify/src/styles/styles';
+
+.v-data-table td {
+  font-size: 13px !important;
+  padding: 10px 24px;
+}
+
+.v-data-table-header tr th {
+  white-space: nowrap;
+}

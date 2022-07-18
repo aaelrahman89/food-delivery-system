@@ -1,0 +1,42 @@
+.DS_Store
+node_modules
+dist
+
+tests/e2e/videos
+tests/e2e/screenshots
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Unwanted Files
+*.iml
+.nyc_output
+coverage
+nginx/conf.d/entries
+package-lock.json
+build.tar
+docker-compose.yaml
+nokube_gateway
+mongodump
+bundle-stats.html
+survv-api.yaml
+.directory
+initMongo
+nokube
+nokube-gce.sh
+local_wiremock

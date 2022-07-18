@@ -1,0 +1,29 @@
+{
+  "name": "@survv/assets",
+  "version": "1.0.0",
+  "description": "Images and sound files hosted for SURVV web clients",
+  "author": "Virgin Gates",
+  "license": "UNLICENSED",
+  "private": true,
+  "homepage": "https://github.com/VirginGates/survv-fe-c-web#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VirginGates/survv-fe-c-web.git"
+  },
+  "keywords": [
+    "survv",
+    "virgin gates",
+    "virgin gates web"
+  ],
+  "bugs": {
+    "url": "https://github.com/VirginGates/survv-fe-c-web/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dups": "echo \"no dups script for assets package\"",
+    "test": "echo \"no test script for assets package\"",
+    "coverage": "echo \"no coverage script for assets package\"",
+    "e2e": "echo \"no e2e script\"",
+    "build": "sh ./scripts/build.sh"
+  }
+}
